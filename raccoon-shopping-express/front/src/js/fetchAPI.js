@@ -51,11 +51,11 @@ export default class FetchAPI {
         if (this.page === PAGE + 1) {
           hotDealSection.draw();
           hotDealSection.updateMoreListNumber(count, data.dataLength);
-          return data.list;
+          return data;
         }
         hotDealSection.drawExtraList();
         hotDealSection.updateMoreListNumber(count, data.dataLength);
-        return data.list;
+        return data;
       })
       .then((status) => console.log(this.req.sucess, status.code))
       .catch((error) => console.log(this.req.failed, error));

@@ -72,7 +72,6 @@ export default class HotDealSection {
   }
 
   updateMoreListNumber(current, length) {
-    console.log(current, length);
     this.target.innerHTML = `<span>더보기(${current}/${length})</span>`;
     if (current === length) {
       this.target.style.color = '#aeaeae';
